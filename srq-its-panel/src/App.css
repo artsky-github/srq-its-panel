@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 280px);
+}
+
+@media (max-width: 576px) {
+  iframe {
+    height: calc(100vh - 350px);
+  }
+}
