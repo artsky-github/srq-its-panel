@@ -11,5 +11,11 @@ iframe {
 @media (max-width: 576px) {
   iframe {
     height: calc(100vh - 350px);
+    margin-bottom: 50px;
   }
+}
+
+#green-spinner {
+    position: absolute;
+    text-align: center;
 }
