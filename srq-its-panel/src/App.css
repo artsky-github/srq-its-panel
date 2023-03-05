@@ -1,6 +1,8 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
+  zoom: 0.5;
 }
 
 iframe {
@@ -10,12 +12,24 @@ iframe {
 
 @media (max-width: 576px) {
   iframe {
-    height: calc(100vh - 350px);
-    margin-bottom: 50px;
+    height: calc(100vh - 400px);
   }
 }
 
 #green-spinner {
     position: absolute;
     text-align: center;
+}
+
+
+
+@keyframes date-text-glow {
+  from {text-shadow: 0 0 3px #198754}
+  to {text-shadow: unset}
+}
+
+
+
+.date-text {
+  animation-duration: 1s;
 }

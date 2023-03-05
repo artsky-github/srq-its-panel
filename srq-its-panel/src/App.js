@@ -22,28 +22,55 @@ function App() {
 function NavBar() {
   const [openArrival, setOpenArrival] = useState(true);
   const [openDeparture, setOpenDeparture] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
-    document.querySelector("#date-text").innerHTML = new Date().toString();
+    window.setInterval(() => {
+      document.querySelectorAll(".date-text").forEach((currentTag) => {
+        currentTag.innerHTML = new Date().toString();
+        currentTag.setAttribute("style", "animation-name: date-text-glow");
+        setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 500);
+      });
+      document.querySelector("#iframe-dep").src =
+        document.querySelector("#iframe-dep").src;
+    }, 60000);
+  }, []);
+
+  useEffect(() => {
+    document.querySelectorAll(".date-text").forEach((currentTag) => {
+      currentTag.innerHTML = new Date().toString();
+      currentTag.setAttribute("style", "animation-name: date-text-glow");
+      setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 500);
+    });
   });
-  window.setInterval(function () {
-    document.querySelector("#date-text").innerHTML = new Date().toString();
-    document.querySelector("#iframe-dep").src =
-      document.querySelector("#iframe-dep").src;
-  }, 60000);
+
   return (
     <>
     <Navbar bg="success" expand="sm" variant="dark">
       <Container>
-        <Navbar.Brand href="/arrivals">
+        <Navbar.Brand>
           <Stack direction="horizontal" gap={3}>
-            <img alt="svg of react" src={logo} />
+            <img alt="SVG of SRQ" src={logo} />
             <span className="fs-4 fw-bold">ITS Panel</span>
           </Stack>
         </Navbar.Brand>
         <Nav className="container-fluid justify-content-end text-center">
-          <Nav.Link onClick = {() => setOpenArrival(!openArrival)} aria-controls = "arrival-fade" aria-expanded = {openArrival}>Arrivals</Nav.Link>
-          <Nav.Link onClick = {() => setOpenDeparture(!openDeparture)} aria-controls = "departures-fade" aria-expanded = {openDeparture}>Departures</Nav.Link>
+          <Nav.Link onClick = {() => {
+              if (openArrival === false) {
+                setOpenDeparture(!openDeparture);
+                setTimeout(() => {setOpenArrival(!openArrival)}, 300);
+                setIsActive(!isActive);
+              }
+              }
+            } aria-controls = "arrival-fade" aria-expanded = {openArrival} active = {isActive}>Arrivals</Nav.Link>
+          <Nav.Link onClick = {() => {
+              if (openDeparture === false) {
+                setOpenArrival(!openArrival);
+                setTimeout(() => {setOpenDeparture(!openDeparture)}, 300);
+                setIsActive(!isActive);
+              }
+              }
+            } aria-controls = "departures-fade" aria-expanded = {openDeparture} active = {!isActive}>Departures</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
@@ -51,7 +78,7 @@ function NavBar() {
           <Fade in={openDeparture} unmountOnExit>
             <div id = "departures-fade">
               <h2 className="text-center text-success">SRQ Flight Departures</h2>
-              <p id="date-text" className="text-center text-success"></p>
+              <p data-mdb-animation = "glow" className="date-text text-center text-success"></p>
               <iframe
                 id="iframe-dep"
                 title = "aerocloud-dep-arr"
@@ -63,7 +90,7 @@ function NavBar() {
           <Fade in={openArrival} unmountOnExit>
             <div id = "departures-fade">
               <h2 className="text-center text-success">SRQ Flight Arrivals</h2>
-              <p id="date-text" className="text-center text-success"></p>
+              <p className="date-text text-center text-success"></p>
               <iframe
                 id="iframe-dep"
                 title = "aerocloud-dep-arr"
