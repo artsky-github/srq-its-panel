@@ -29,7 +29,7 @@ function NavBar() {
       document.querySelectorAll(".date-text").forEach((currentTag) => {
         currentTag.innerHTML = new Date().toString();
         currentTag.setAttribute("style", "animation-name: date-text-glow");
-        setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 500);
+        setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 300);
       });
       document.querySelector("#iframe-dep").src =
         document.querySelector("#iframe-dep").src;
@@ -40,7 +40,7 @@ function NavBar() {
     document.querySelectorAll(".date-text").forEach((currentTag) => {
       currentTag.innerHTML = new Date().toString();
       currentTag.setAttribute("style", "animation-name: date-text-glow");
-      setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 500);
+      setTimeout(() => {currentTag.removeAttribute('style', 'animation-name')}, 300);
     });
   });
 
