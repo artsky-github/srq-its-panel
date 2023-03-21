@@ -40,7 +40,7 @@ function AeroCloudArrDepSrq({openArrival, openDeparture}) {
             </div>
           </Fade>
           <Fade in={openArrival} unmountOnExit>
-            <div id = "departures-fade">
+            <div id = "arrival-fade">
               <h2 className="text-center text-success">SRQ Flight Arrivals</h2>
               <p className="date-text text-center text-success"></p>
               <iframe

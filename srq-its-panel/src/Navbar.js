@@ -5,13 +5,14 @@ import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import { useState } from "react";
 import AeroCloudArrDepSrq from "./FidsSrq";
+import CommonUseWiki from "./CuWiki";
 
 function NavBar() {
     const [isActiveArr, setActiveArr] = useState(true);
     const [isActiveDep, setActiveDep] = useState(false);
     const [isActiveWiki, setActiveWiki] = useState(false);
-    let [openArrival, setOpenArrival] = useState(true);
-    let [openDeparture, setOpenDeparture] = useState(false);
+    const [openArrival, setOpenArrival] = useState(true);
+    const [openDeparture, setOpenDeparture] = useState(false);
     const [openWiki, setOpenWiki] = useState(false);
 
   
@@ -85,6 +86,7 @@ function NavBar() {
           </Container>
         </Navbar>
         <AeroCloudArrDepSrq openDeparture = {openDeparture} openArrival = {openArrival} />
+        <CommonUseWiki openWiki = {openWiki} />
       </>
     );
   }
