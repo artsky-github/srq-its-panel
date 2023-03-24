@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32553933.css",
+    "main.js": "/static/js/main.a0cb100b.js",
+    "static/js/787.65fda71f.chunk.js": "/static/js/787.65fda71f.chunk.js",
+    "static/media/srq-logo.svg": "/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
+    "index.html": "/index.html",
+    "main.32553933.css.map": "/static/css/main.32553933.css.map",
+    "main.a0cb100b.js.map": "/static/js/main.a0cb100b.js.map",
+    "787.65fda71f.chunk.js.map": "/static/js/787.65fda71f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32553933.css",
+    "static/js/main.a0cb100b.js"
+  ]
+}
