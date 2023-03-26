@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 iframe {
@@ -9,15 +9,21 @@ iframe {
   height: calc(100vh - 280px);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   iframe {
     height: calc(100vh - 400px);
   }
-}
 
-#green-spinner {
-  position: absolute;
-  text-align: center;
+  #navbar-brand-srq {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #stack-collapse {
+    justify-content: center;
+    scale: 0.8;
+  }
 }
 
 @keyframes date-text-glow {

@@ -4,7 +4,7 @@ import Fade from "react-bootstrap/Fade";
 function CommonUseWiki({ openWiki }) {
   return (
     <>
-      <Container className="mt-5">
+      <Container>
         <Fade in={openWiki} unmountOnExit>
           <div id="wiki-fade">
             <h2
