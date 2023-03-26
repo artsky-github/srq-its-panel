@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/srq-its-panel/static/css/main.888c7bd4.css",
-    "main.js": "/srq-its-panel/static/js/main.a23b296b.js",
+    "main.css": "/srq-its-panel/static/css/main.89191f4b.css",
+    "main.js": "/srq-its-panel/static/js/main.281a0c77.js",
     "static/js/787.65fda71f.chunk.js": "/srq-its-panel/static/js/787.65fda71f.chunk.js",
     "static/media/srq-logo.svg": "/srq-its-panel/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
     "index.html": "/srq-its-panel/index.html",
-    "main.888c7bd4.css.map": "/srq-its-panel/static/css/main.888c7bd4.css.map",
-    "main.a23b296b.js.map": "/srq-its-panel/static/js/main.a23b296b.js.map",
+    "main.89191f4b.css.map": "/srq-its-panel/static/css/main.89191f4b.css.map",
+    "main.281a0c77.js.map": "/srq-its-panel/static/js/main.281a0c77.js.map",
     "787.65fda71f.chunk.js.map": "/srq-its-panel/static/js/787.65fda71f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.888c7bd4.css",
-    "static/js/main.a23b296b.js"
+    "static/css/main.89191f4b.css",
+    "static/js/main.281a0c77.js"
   ]
 }
