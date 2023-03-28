@@ -18,7 +18,7 @@ function CommonUseWiki({ openWiki }) {
               className="border border-2 rounded-3 border-success"
             >
               <iframe
-                src="https://smairport-my.sharepoint.com/personal/arthur_levitsky_srq-airport_com/_layouts/15/Doc.aspx?sourcedoc={bebc5762-ba93-44b2-8de4-e1eaf967b514}&amp;action=embedview&amp;wdEmbedCode=0&amp;wdPrint=0"
+                src="https://smairport-my.sharepoint.com/personal/arthur_levitsky_srq-airport_com/_layouts/15/Doc.aspx?sourcedoc={bebc5762-ba93-44b2-8de4-e1eaf967b514}&amp;action=embedview&amp;wdEmbedCode=0"
                 style={{ position: "relative", left: "-1px", top: "-1px" }}
               ></iframe>
             </div>

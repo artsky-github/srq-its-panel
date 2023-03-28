@@ -43,7 +43,7 @@ function NavBar() {
 
                   setTimeout(() => {
                     setOpenArrival(!openArrival);
-                  }, 300);
+                  }, 100);
                 }
               }}
               aria-controls="arrival-fade"
@@ -69,7 +69,7 @@ function NavBar() {
 
                   setTimeout(() => {
                     setOpenDeparture(!openDeparture);
-                  }, 300);
+                  }, 100);
                 }
               }}
               aria-controls="departures-fade"
@@ -95,7 +95,7 @@ function NavBar() {
 
                   setTimeout(() => {
                     setOpenWiki(!openWiki);
-                  }, 300);
+                  }, 100);
                 }
               }}
               aria-controls="wiki-fade"

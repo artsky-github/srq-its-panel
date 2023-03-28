@@ -39,8 +39,8 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
             ></p>
             <iframe
               id="iframe-dep"
-              title="aerocloud-dep-arr"
-              className="border border-2 rounded-3 border-success"
+              title="aerocloud-srq-departures"
+              className="border border-2 rounded-3 border-success d-block"
               src="https://aerocloud-us-fids-widgets.s3.us-east-2.amazonaws.com/srq_dep.html"
             ></iframe>
           </div>
@@ -50,9 +50,9 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
             <h2 className="text-center text-success">SRQ Flight Arrivals</h2>
             <p className="date-text text-center text-success"></p>
             <iframe
-              id="iframe-dep"
-              title="aerocloud-dep-arr"
-              className="border border-2 rounded-3 border-success"
+              id="iframe-arr"
+              title="aerocloud-srq-arrivals"
+              className="border border-2 rounded-3 border-success d-block"
               src="https://aerocloud-us-fids-widgets.s3.us-east-2.amazonaws.com/srq_arr.html"
             ></iframe>
           </div>

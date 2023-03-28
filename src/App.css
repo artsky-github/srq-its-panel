@@ -6,12 +6,13 @@ body {
 
 iframe {
   width: 100%;
-  height: calc(100vh - 280px);
+  height: 800px;
 }
+/*calc(100vh - 280px);*/
 
 @media (max-width: 575px) {
   iframe {
-    height: calc(100vh - 400px);
+    height: 500px;
   }
 
   #navbar-brand-srq {
