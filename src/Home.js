@@ -1,5 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Fade from "react-bootstrap/Fade";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function HomePage({ openHome }) {
   return (
@@ -13,6 +15,19 @@ function HomePage({ openHome }) {
             >
               ITS Home
             </h2>
+            <Container className="text-center text-success">
+              <Row className="justify-content-center">
+                <Col sm="4" lg="3" className="border">
+                  Arrivals
+                </Col>
+                <Col sm="4" lg="3" className="border">
+                  Departures
+                </Col>
+                <Col sm="4" lg="3" className="border">
+                  Wiki
+                </Col>
+              </Row>
+            </Container>
           </div>
         </Fade>
       </Container>
