@@ -6,14 +6,17 @@ import Stack from "react-bootstrap/Stack";
 import { useState } from "react";
 import AeroCloudArrDepSrq from "./FidsSrq";
 import CommonUseWiki from "./CuWiki";
+import HomePage from "./Home";
 
 function NavBar() {
   const [isActiveArr, setActiveArr] = useState(true);
   const [isActiveDep, setActiveDep] = useState(false);
   const [isActiveWiki, setActiveWiki] = useState(false);
+  const [isActiveHome, setActiveHome] = useState(false);
   const [openArrival, setOpenArrival] = useState(true);
   const [openDeparture, setOpenDeparture] = useState(false);
   const [openWiki, setOpenWiki] = useState(false);
+  const [openHome, setOpenHome] = useState(false);
 
   return (
     <>
@@ -30,6 +33,36 @@ function NavBar() {
             <Nav className="container-fluid justify-content-end text-center p-0">
               <Nav.Link
                 onClick={() => {
+                  if (openHome === false) {
+                    if (isActiveDep === true) {
+                      setOpenDeparture(!openDeparture);
+                      setActiveDep(!isActiveDep);
+                      setActiveHome(!isActiveHome);
+                    } else if (isActiveWiki === true) {
+                      setOpenWiki(!openWiki);
+                      setActiveWiki(!isActiveWiki);
+                      setActiveHome(!isActiveHome);
+                    } else if (isActiveArr === true) {
+                      setOpenArrival(!openArrival);
+                      setActiveArr(!isActiveArr);
+                      setActiveHome(!isActiveHome);
+                    }
+                  } else {
+                    setActiveHome(!isActiveHome);
+                  }
+
+                  setTimeout(() => {
+                    setOpenHome(!openHome);
+                  }, 100);
+                }}
+                aria-controls="home-fade"
+                aria-expanded={openHome}
+                active={isActiveHome}
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
                   if (openArrival === false) {
                     if (isActiveDep === true) {
                       setOpenDeparture(!openDeparture);
@@ -39,14 +72,18 @@ function NavBar() {
                       setOpenWiki(!openWiki);
                       setActiveWiki(!isActiveWiki);
                       setActiveArr(!isActiveArr);
-                    } else {
+                    } else if (isActiveHome === true) {
+                      setOpenHome(!openHome);
+                      setActiveHome(!isActiveHome);
                       setActiveArr(!isActiveArr);
                     }
-
-                    setTimeout(() => {
-                      setOpenArrival(!openArrival);
-                    }, 100);
+                  } else {
+                    setActiveArr(!isActiveArr);
                   }
+
+                  setTimeout(() => {
+                    setOpenArrival(!openArrival);
+                  }, 100);
                 }}
                 aria-controls="arrival-fade"
                 aria-expanded={openArrival}
@@ -65,14 +102,18 @@ function NavBar() {
                       setOpenWiki(!openWiki);
                       setActiveWiki(!isActiveWiki);
                       setActiveDep(!isActiveDep);
-                    } else {
+                    } else if (isActiveHome === true) {
+                      setOpenHome(!openHome);
+                      setActiveHome(!isActiveHome);
                       setActiveDep(!isActiveDep);
                     }
-
-                    setTimeout(() => {
-                      setOpenDeparture(!openDeparture);
-                    }, 100);
+                  } else {
+                    setActiveDep(!isActiveDep);
                   }
+
+                  setTimeout(() => {
+                    setOpenDeparture(!openDeparture);
+                  }, 100);
                 }}
                 aria-controls="departures-fade"
                 aria-expanded={openDeparture}
@@ -90,6 +131,10 @@ function NavBar() {
                     } else if (isActiveArr === true) {
                       setOpenArrival(!openArrival);
                       setActiveArr(!isActiveArr);
+                      setActiveWiki(!isActiveWiki);
+                    } else if (isActiveHome === true) {
+                      setOpenHome(!openHome);
+                      setActiveHome(!isActiveHome);
                       setActiveWiki(!isActiveWiki);
                     } else {
                       setActiveWiki(!isActiveWiki);
@@ -115,6 +160,7 @@ function NavBar() {
         openArrival={openArrival}
       />
       <CommonUseWiki openWiki={openWiki} />
+      <HomePage openHome={openHome} />
     </>
   );
 }
