@@ -14,17 +14,6 @@ iframe {
   iframe {
     height: 500px;
   }
-
-  #navbar-brand-srq {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #stack-collapse {
-    justify-content: center;
-    scale: 0.8;
-  }
 }
 
 @keyframes date-text-glow {

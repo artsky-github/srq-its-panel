@@ -19,92 +19,95 @@ function NavBar() {
     <>
       <Navbar className="mb-5" bg="success" expand="sm" variant="dark">
         <Container>
-          <Navbar.Brand id="navbar-brand-srq" className="container-fluid">
-            <Stack id="stack-collapse" direction="horizontal" gap={3}>
+          <Navbar.Brand id="navbar-brand-srq">
+            <Stack direction="horizontal" gap={3}>
               <img alt="SVG of SRQ" src={logo} />
               <span className="fs-4 fw-bold">ITS Panel</span>
             </Stack>
           </Navbar.Brand>
-          <Nav className="container-fluid justify-content-end text-center p-0">
-            <Nav.Link
-              onClick={() => {
-                if (openArrival === false) {
-                  if (isActiveDep === true) {
-                    setOpenDeparture(!openDeparture);
-                    setActiveDep(!isActiveDep);
-                    setActiveArr(!isActiveArr);
-                  } else if (isActiveWiki === true) {
-                    setOpenWiki(!openWiki);
-                    setActiveWiki(!isActiveWiki);
-                    setActiveArr(!isActiveArr);
-                  } else {
-                    setActiveArr(!isActiveArr);
-                  }
+          <Navbar.Toggle aria-controls="navbar-collapse" />
+          <Navbar.Collapse id="navbar-collapse">
+            <Nav className="container-fluid justify-content-end text-center p-0">
+              <Nav.Link
+                onClick={() => {
+                  if (openArrival === false) {
+                    if (isActiveDep === true) {
+                      setOpenDeparture(!openDeparture);
+                      setActiveDep(!isActiveDep);
+                      setActiveArr(!isActiveArr);
+                    } else if (isActiveWiki === true) {
+                      setOpenWiki(!openWiki);
+                      setActiveWiki(!isActiveWiki);
+                      setActiveArr(!isActiveArr);
+                    } else {
+                      setActiveArr(!isActiveArr);
+                    }
 
-                  setTimeout(() => {
-                    setOpenArrival(!openArrival);
-                  }, 100);
-                }
-              }}
-              aria-controls="arrival-fade"
-              aria-expanded={openArrival}
-              active={isActiveArr}
-            >
-              Arrivals
-            </Nav.Link>
-            <Nav.Link
-              onClick={() => {
-                if (openDeparture === false) {
-                  if (isActiveArr === true) {
-                    setOpenArrival(!openArrival);
-                    setActiveArr(!isActiveArr);
-                    setActiveDep(!isActiveDep);
-                  } else if (isActiveWiki === true) {
-                    setOpenWiki(!openWiki);
-                    setActiveWiki(!isActiveWiki);
-                    setActiveDep(!isActiveDep);
-                  } else {
-                    setActiveDep(!isActiveDep);
+                    setTimeout(() => {
+                      setOpenArrival(!openArrival);
+                    }, 100);
                   }
+                }}
+                aria-controls="arrival-fade"
+                aria-expanded={openArrival}
+                active={isActiveArr}
+              >
+                Arrivals
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  if (openDeparture === false) {
+                    if (isActiveArr === true) {
+                      setOpenArrival(!openArrival);
+                      setActiveArr(!isActiveArr);
+                      setActiveDep(!isActiveDep);
+                    } else if (isActiveWiki === true) {
+                      setOpenWiki(!openWiki);
+                      setActiveWiki(!isActiveWiki);
+                      setActiveDep(!isActiveDep);
+                    } else {
+                      setActiveDep(!isActiveDep);
+                    }
 
-                  setTimeout(() => {
-                    setOpenDeparture(!openDeparture);
-                  }, 100);
-                }
-              }}
-              aria-controls="departures-fade"
-              aria-expanded={openDeparture}
-              active={isActiveDep}
-            >
-              Departures
-            </Nav.Link>
-            <Nav.Link
-              onClick={() => {
-                if (openWiki === false) {
-                  if (isActiveDep === true) {
-                    setOpenDeparture(!openDeparture);
-                    setActiveDep(!isActiveDep);
-                    setActiveWiki(!isActiveWiki);
-                  } else if (isActiveArr === true) {
-                    setOpenArrival(!openArrival);
-                    setActiveArr(!isActiveArr);
-                    setActiveWiki(!isActiveWiki);
-                  } else {
-                    setActiveWiki(!isActiveWiki);
+                    setTimeout(() => {
+                      setOpenDeparture(!openDeparture);
+                    }, 100);
                   }
+                }}
+                aria-controls="departures-fade"
+                aria-expanded={openDeparture}
+                active={isActiveDep}
+              >
+                Departures
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  if (openWiki === false) {
+                    if (isActiveDep === true) {
+                      setOpenDeparture(!openDeparture);
+                      setActiveDep(!isActiveDep);
+                      setActiveWiki(!isActiveWiki);
+                    } else if (isActiveArr === true) {
+                      setOpenArrival(!openArrival);
+                      setActiveArr(!isActiveArr);
+                      setActiveWiki(!isActiveWiki);
+                    } else {
+                      setActiveWiki(!isActiveWiki);
+                    }
 
-                  setTimeout(() => {
-                    setOpenWiki(!openWiki);
-                  }, 100);
-                }
-              }}
-              aria-controls="wiki-fade"
-              aria-expanded={openWiki}
-              active={isActiveWiki}
-            >
-              Wiki
-            </Nav.Link>
-          </Nav>
+                    setTimeout(() => {
+                      setOpenWiki(!openWiki);
+                    }, 100);
+                  }
+                }}
+                aria-controls="wiki-fade"
+                aria-expanded={openWiki}
+                active={isActiveWiki}
+              >
+                Wiki
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
       <AeroCloudArrDepSrq
