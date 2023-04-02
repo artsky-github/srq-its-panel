@@ -1,4 +1,4 @@
-import logo from "./srq-logo.svg";
+import logo from "./images/srq-logo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";

@@ -28,3 +28,33 @@ iframe {
 .date-text {
   animation-duration: 1s;
 }
+
+.app-link-anim:hover {
+  animation: app-shadow-hover-in 0.3s ease-out forwards;
+}
+
+.app-link-anim {
+  animation: app-shadow-hover-out 0.3s ease-out;
+}
+
+@keyframes app-shadow-hover-in {
+  from {
+    transform: translate(0px, 0px);
+    filter: drop-shadow(0px 0px black);
+  }
+  to {
+    transform: translate(-3px, -3px);
+    filter: drop-shadow(3px 3px black);
+  }
+}
+
+@keyframes app-shadow-hover-out {
+  from {
+    transform: translate(-3px, -3px);
+    filter: drop-shadow(3px 3px black);
+  }
+  to {
+    transform: translate(0px, 0px);
+    filter: drop-shadow(0px 0px);
+  }
+}
