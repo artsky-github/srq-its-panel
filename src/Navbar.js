@@ -9,18 +9,18 @@ import CommonUseWiki from "./CuWiki";
 import HomePage from "./Home";
 
 function NavBar() {
-  const [isActiveArr, setActiveArr] = useState(true);
+  const [isActiveArr, setActiveArr] = useState(false);
   const [isActiveDep, setActiveDep] = useState(false);
   const [isActiveWiki, setActiveWiki] = useState(false);
-  const [isActiveHome, setActiveHome] = useState(false);
-  const [openArrival, setOpenArrival] = useState(true);
+  const [isActiveHome, setActiveHome] = useState(true);
+  const [openArrival, setOpenArrival] = useState(false);
   const [openDeparture, setOpenDeparture] = useState(false);
   const [openWiki, setOpenWiki] = useState(false);
-  const [openHome, setOpenHome] = useState(false);
+  const [openHome, setOpenHome] = useState(true);
 
   return (
     <>
-      <Navbar className="mb-5" bg="success" expand="sm" variant="dark">
+      <Navbar className="mb-5" bg="success" expand="md" variant="dark">
         <Container>
           <Navbar.Brand id="navbar-brand-srq">
             <Stack direction="horizontal" gap={3}>
