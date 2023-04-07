@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/srq-its-panel/static/css/main.2a0b471d.css",
-    "main.js": "/srq-its-panel/static/js/main.a8e73b63.js",
+    "main.css": "/srq-its-panel/static/css/main.3501d6eb.css",
+    "main.js": "/srq-its-panel/static/js/main.a43b4959.js",
     "static/js/787.65fda71f.chunk.js": "/srq-its-panel/static/js/787.65fda71f.chunk.js",
+    "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.8b717ad4cf58bbb87623ae2fbb98755f.svg",
+    "static/media/sharepoint_app.svg": "/srq-its-panel/static/media/sharepoint_app.d760dbe3dc203e55465dfa72a5441d93.svg",
+    "static/media/arrival_app.svg": "/srq-its-panel/static/media/arrival_app.747edb75ce6ec560885584e3069e04f5.svg",
+    "static/media/outlook_app.svg": "/srq-its-panel/static/media/outlook_app.39ce27e7149ed24f07037e9bab5be933.svg",
+    "static/media/wiki_app.svg": "/srq-its-panel/static/media/wiki_app.0c469a9852bc1c23362d36f668c8a4c4.svg",
+    "static/media/departure_app.svg": "/srq-its-panel/static/media/departure_app.bd94f2179d5015c4ba08f9328ced5441.svg",
+    "static/media/teams_app.svg": "/srq-its-panel/static/media/teams_app.ff0ea87c47b0636820d7f3cb2c7cdeec.svg",
+    "static/media/excel_app.svg": "/srq-its-panel/static/media/excel_app.15bba3c9b865680e48c158af3610273f.svg",
     "static/media/srq-logo.svg": "/srq-its-panel/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
     "index.html": "/srq-its-panel/index.html",
-    "main.2a0b471d.css.map": "/srq-its-panel/static/css/main.2a0b471d.css.map",
-    "main.a8e73b63.js.map": "/srq-its-panel/static/js/main.a8e73b63.js.map",
+    "main.3501d6eb.css.map": "/srq-its-panel/static/css/main.3501d6eb.css.map",
+    "main.a43b4959.js.map": "/srq-its-panel/static/js/main.a43b4959.js.map",
     "787.65fda71f.chunk.js.map": "/srq-its-panel/static/js/787.65fda71f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a0b471d.css",
-    "static/js/main.a8e73b63.js"
+    "static/css/main.3501d6eb.css",
+    "static/js/main.a43b4959.js"
   ]
 }
