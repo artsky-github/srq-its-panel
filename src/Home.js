@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import arrivalApp from "./images/arrival_app.svg";
 import departureApp from "./images/departure_app.svg";
 import wikiApp from "./images/wiki_app.svg";
+import radarApp from "./images/radar_app.svg";
 
 function HomePage({ openHome }) {
   return (
@@ -12,20 +13,15 @@ function HomePage({ openHome }) {
       <Container>
         <Fade in={openHome} unmountOnExit>
           <div id="home-fade">
-            <h2
-              className="text-center text-success"
-              style={{ marginBottom: "16px" }}
-            >
-              ITS Home
-            </h2>
+            <h2 className="text-center text-success mb-5">ITS Quick Links</h2>
             <Container className="text-center text-success">
-              <Row className="justify-content-center">
-                <Col className="mb-1" sm="4" lg="3">
-                  <a href="#">
+              <Row xs="2" sm="4" className="mb-2">
+                <Col>
+                  <a className="app-links-success" href="#">
                     <div className="d-block app-link-anim">
                       <img
-                        alt="SVG for departures link"
-                        src={departureApp}
+                        alt="Arrivals App SVG"
+                        src={arrivalApp}
                         width="80"
                         className="d-block m-auto"
                       />
@@ -33,23 +29,48 @@ function HomePage({ openHome }) {
                     Arrivals
                   </a>
                 </Col>
-                <Col className="mb-1" sm="4" lg="3">
-                  <img
-                    alt="SVG for departures link"
-                    src={departureApp}
-                    width="80"
-                    className="d-block m-auto"
-                  />
-                  Departures
+                <Col>
+                  <a className="app-links-success" href="#">
+                    <div className="d-block app-link-anim">
+                      <img
+                        alt="Departures App SVG"
+                        src={departureApp}
+                        width="80"
+                        className="d-block m-auto"
+                      />
+                    </div>
+                    Departures
+                  </a>
                 </Col>
-                <Col className="mb-1" sm="4" lg="3">
-                  <img
-                    alt="SVG for wiki link"
-                    src={wikiApp}
-                    width="80"
-                    className="d-block m-auto"
-                  />
-                  Wiki
+                <Col>
+                  <a
+                    className="app-links-success"
+                    href="https://www.radarbox.com/airport/KSRQ"
+                    target="_blank"
+                  >
+                    <div className="d-block app-link-anim">
+                      <img
+                        alt="Flight Tracker App SVG"
+                        src={radarApp}
+                        width="80"
+                        className="d-block m-auto"
+                      />
+                    </div>
+                    Flight Tracker
+                  </a>
+                </Col>
+                <Col>
+                  <a className="app-links-success" href="#">
+                    <div className="d-block app-link-anim">
+                      <img
+                        alt="Wiki App SVG"
+                        src={wikiApp}
+                        width="80"
+                        className="d-block m-auto"
+                      />
+                    </div>
+                    Wiki
+                  </a>
                 </Col>
               </Row>
             </Container>

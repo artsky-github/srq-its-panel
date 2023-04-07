@@ -33,7 +33,7 @@ function NavBar() {
             <Nav className="container-fluid justify-content-end text-center p-0">
               <Nav.Link
                 onClick={() => {
-                  if (openHome === false) {
+                  if (isActiveHome === false) {
                     if (isActiveDep === true) {
                       setOpenDeparture(!openDeparture);
                       setActiveDep(!isActiveDep);
@@ -46,14 +46,14 @@ function NavBar() {
                       setOpenArrival(!openArrival);
                       setActiveArr(!isActiveArr);
                       setActiveHome(!isActiveHome);
+                    } else {
+                      setActiveHome(!isActiveHome);
                     }
-                  } else {
-                    setActiveHome(!isActiveHome);
-                  }
 
-                  setTimeout(() => {
-                    setOpenHome(!openHome);
-                  }, 100);
+                    setTimeout(() => {
+                      setOpenHome(!openHome);
+                    }, 100);
+                  }
                 }}
                 aria-controls="home-fade"
                 aria-expanded={openHome}
@@ -63,7 +63,7 @@ function NavBar() {
               </Nav.Link>
               <Nav.Link
                 onClick={() => {
-                  if (openArrival === false) {
+                  if (isActiveArr === false) {
                     if (isActiveDep === true) {
                       setOpenDeparture(!openDeparture);
                       setActiveDep(!isActiveDep);
@@ -76,14 +76,13 @@ function NavBar() {
                       setOpenHome(!openHome);
                       setActiveHome(!isActiveHome);
                       setActiveArr(!isActiveArr);
+                    } else {
+                      setActiveArr(!isActiveArr);
                     }
-                  } else {
-                    setActiveArr(!isActiveArr);
+                    setTimeout(() => {
+                      setOpenArrival(!openArrival);
+                    }, 100);
                   }
-
-                  setTimeout(() => {
-                    setOpenArrival(!openArrival);
-                  }, 100);
                 }}
                 aria-controls="arrival-fade"
                 aria-expanded={openArrival}
@@ -106,14 +105,13 @@ function NavBar() {
                       setOpenHome(!openHome);
                       setActiveHome(!isActiveHome);
                       setActiveDep(!isActiveDep);
+                    } else {
+                      setActiveDep(!isActiveDep);
                     }
-                  } else {
-                    setActiveDep(!isActiveDep);
+                    setTimeout(() => {
+                      setOpenDeparture(!openDeparture);
+                    }, 100);
                   }
-
-                  setTimeout(() => {
-                    setOpenDeparture(!openDeparture);
-                  }, 100);
                 }}
                 aria-controls="departures-fade"
                 aria-expanded={openDeparture}
@@ -139,7 +137,6 @@ function NavBar() {
                     } else {
                       setActiveWiki(!isActiveWiki);
                     }
-
                     setTimeout(() => {
                       setOpenWiki(!openWiki);
                     }, 100);
