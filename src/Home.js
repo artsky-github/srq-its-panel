@@ -15,8 +15,12 @@ function HomePage({ openHome }) {
   return (
     <>
       <Container>
-        <Fade in={openHome} unmountOnExit>
-          <div id="home-fade" style={{ minHeight: "600px" }}>
+        <Fade
+          style={{ minHeight: "calc(100vh - 268px)" }}
+          in={openHome}
+          unmountOnExit
+        >
+          <div id="home-fade">
             <h2 className="text-center text-success mb-5">Quick Links</h2>
             <Container className="text-center">
               <Row xs="2" md="4" className="mx-5 justify-content-center">
