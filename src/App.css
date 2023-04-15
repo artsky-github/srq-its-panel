@@ -70,6 +70,11 @@ iframe {
   text-decoration: none;
 }
 
+.app-links-red {
+  color: #a62828;
+  text-decoration: none;
+}
+
 .app-links-hover:hover {
   color: #a0a0a0;
 }
