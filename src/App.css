@@ -17,6 +17,18 @@ iframe {
   }
 }
 
+@media (max-width: 768px) {
+  .row-stackLeft-resize {
+    justify-content: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-stackLeft-resize {
+    justify-content: center;
+  }
+}
+
 @keyframes date-text-glow {
   from {
     text-shadow: 0 0 3px #198754;

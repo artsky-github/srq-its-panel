@@ -26,7 +26,7 @@ function HomePage({ openHome }) {
             <Row
               xs="2"
               md="4"
-              className="mx-5 justify-content-center text-center"
+              className="mx-5 row-stackLeft-resize text-center"
             >
               <Col lg="2" className="mb-2">
                 <a className="app-links-green app-links-hover" href="#">
@@ -74,7 +74,7 @@ function HomePage({ openHome }) {
             <Row
               xs="2"
               md="4"
-              className="mx-5 justify-content-center text-center"
+              className="mx-5 row-stackLeft-resize text-center"
             >
               <Col lg="2" className="mb-2">
                 <a
@@ -151,7 +151,7 @@ function HomePage({ openHome }) {
             <Row
               xs="2"
               md="4"
-              className="mx-5 row-resize-jcl justify-content-center text-center"
+              className="mx-5 row-stackLeft-resize text-center"
             >
               <Col lg="2" className="mb-2">
                 <a
