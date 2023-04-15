@@ -11,6 +11,7 @@ import teamsApp from "./images/teams_app.svg";
 import sharepointApp from "./images/sharepoint_app.svg";
 import excelApp from "./images/excel_app.svg";
 import supportApp from "./images/support_app.svg";
+import adpApp from "./images/adp_app.svg";
 
 function HomePage({ openHome }) {
   return (
@@ -185,6 +186,23 @@ function HomePage({ openHome }) {
                     ></img>
                   </div>
                   IT Support
+                </a>
+              </Col>
+              <Col lg="2" className="mb-2">
+                <a
+                  className="app-links-red app-links-hover"
+                  href="https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN&TARGET=-SM-https://workforcenow.adp.com/portal/theme"
+                  target="_blank"
+                >
+                  <div className="d-block app-link-anim">
+                    <img
+                      alt="ADP App SVG"
+                      src={adpApp}
+                      width="80"
+                      className="d-block m-auto"
+                    ></img>
+                  </div>
+                  ADP
                 </a>
               </Col>
             </Row>
