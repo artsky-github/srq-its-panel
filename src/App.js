@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import FooterSrq from "./Footer";
-import NavBar from "./Navbar";
+import NavBar from "./NavPanel";
 
 function App() {
   return (
