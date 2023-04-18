@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/srq-its-panel/static/css/main.3501d6eb.css",
-    "main.js": "/srq-its-panel/static/js/main.a43b4959.js",
+    "main.css": "/srq-its-panel/static/css/main.1b0351ca.css",
+    "main.js": "/srq-its-panel/static/js/main.70905cb7.js",
     "static/js/787.65fda71f.chunk.js": "/srq-its-panel/static/js/787.65fda71f.chunk.js",
-    "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.8b717ad4cf58bbb87623ae2fbb98755f.svg",
+    "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.7abe0c549502eb73c25fde95a3f38bdc.svg",
+    "static/media/adp_app.svg": "/srq-its-panel/static/media/adp_app.b3ac2fc019aad3d2006ac63670f8cf45.svg",
     "static/media/sharepoint_app.svg": "/srq-its-panel/static/media/sharepoint_app.d760dbe3dc203e55465dfa72a5441d93.svg",
+    "static/media/support_app.svg": "/srq-its-panel/static/media/support_app.2a1c259538ee94a1cf15d132c54e8db0.svg",
     "static/media/arrival_app.svg": "/srq-its-panel/static/media/arrival_app.747edb75ce6ec560885584e3069e04f5.svg",
     "static/media/outlook_app.svg": "/srq-its-panel/static/media/outlook_app.39ce27e7149ed24f07037e9bab5be933.svg",
     "static/media/wiki_app.svg": "/srq-its-panel/static/media/wiki_app.0c469a9852bc1c23362d36f668c8a4c4.svg",
@@ -13,12 +15,12 @@
     "static/media/excel_app.svg": "/srq-its-panel/static/media/excel_app.15bba3c9b865680e48c158af3610273f.svg",
     "static/media/srq-logo.svg": "/srq-its-panel/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
     "index.html": "/srq-its-panel/index.html",
-    "main.3501d6eb.css.map": "/srq-its-panel/static/css/main.3501d6eb.css.map",
-    "main.a43b4959.js.map": "/srq-its-panel/static/js/main.a43b4959.js.map",
+    "main.1b0351ca.css.map": "/srq-its-panel/static/css/main.1b0351ca.css.map",
+    "main.70905cb7.js.map": "/srq-its-panel/static/js/main.70905cb7.js.map",
     "787.65fda71f.chunk.js.map": "/srq-its-panel/static/js/787.65fda71f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3501d6eb.css",
-    "static/js/main.a43b4959.js"
+    "static/css/main.1b0351ca.css",
+    "static/js/main.70905cb7.js"
   ]
 }
