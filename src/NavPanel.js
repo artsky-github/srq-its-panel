@@ -157,7 +157,24 @@ function NavBar() {
         openArrival={openArrival}
       />
       <CommonUseWiki openWiki={openWiki} />
-      <HomePage openHome={openHome} />
+      <HomePage
+        isActiveArr={isActiveArr}
+        isActiveDep={isActiveDep}
+        isActiveWiki={isActiveWiki}
+        isActiveHome={isActiveHome}
+        openArrival={openArrival}
+        openDeparture={openDeparture}
+        openWiki={openWiki}
+        openHome={openHome}
+        setActiveArr={setActiveArr}
+        setActiveDep={setActiveDep}
+        setActiveWiki={setActiveWiki}
+        setActiveHome={setActiveHome}
+        setOpenArrival={setOpenArrival}
+        setOpenDeparture={setOpenDeparture}
+        setOpenWiki={setOpenWiki}
+        setOpenHome={setOpenHome}
+      />
     </>
   );
 }

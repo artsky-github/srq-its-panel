@@ -13,7 +13,24 @@ import excelApp from "./images/excel_app.svg";
 import supportApp from "./images/support_app.svg";
 import adpApp from "./images/adp_app.svg";
 
-function HomePage({ openHome }) {
+function HomePage({
+  isActiveArr,
+  isActiveDep,
+  isActiveWiki,
+  isActiveHome,
+  openArrival,
+  openDeparture,
+  openWiki,
+  openHome,
+  setActiveArr,
+  setActiveDep,
+  setActiveWiki,
+  setActiveHome,
+  setOpenArrival,
+  setOpenDeparture,
+  setOpenWiki,
+  setOpenHome,
+}) {
   return (
     <>
       <Container>
@@ -30,7 +47,31 @@ function HomePage({ openHome }) {
               className="mx-5 row-stackLeft-resize text-center"
             >
               <Col lg="2" className="mb-2">
-                <a className="app-links-green app-links-hover" href="#">
+                <a
+                  className="app-links-green app-links-hover"
+                  onClick={() => {
+                    if (isActiveArr === false) {
+                      if (isActiveDep === true) {
+                        setOpenDeparture(!openDeparture);
+                        setActiveDep(!isActiveDep);
+                        setActiveArr(!isActiveArr);
+                      } else if (isActiveWiki === true) {
+                        setOpenWiki(!openWiki);
+                        setActiveWiki(!isActiveWiki);
+                        setActiveArr(!isActiveArr);
+                      } else if (isActiveHome === true) {
+                        setOpenHome(!openHome);
+                        setActiveHome(!isActiveHome);
+                        setActiveArr(!isActiveArr);
+                      } else {
+                        setActiveArr(!isActiveArr);
+                      }
+                      setTimeout(() => {
+                        setOpenArrival(!openArrival);
+                      }, 100);
+                    }
+                  }}
+                >
                   <div className="d-block app-link-anim">
                     <img
                       alt="Arrivals App SVG"
@@ -43,7 +84,31 @@ function HomePage({ openHome }) {
                 </a>
               </Col>
               <Col lg="2" className="mb-2">
-                <a className="app-links-green app-links-hover" href="#">
+                <a
+                  className="app-links-green app-links-hover"
+                  onClick={() => {
+                    if (openDeparture === false) {
+                      if (isActiveArr === true) {
+                        setOpenArrival(!openArrival);
+                        setActiveArr(!isActiveArr);
+                        setActiveDep(!isActiveDep);
+                      } else if (isActiveWiki === true) {
+                        setOpenWiki(!openWiki);
+                        setActiveWiki(!isActiveWiki);
+                        setActiveDep(!isActiveDep);
+                      } else if (isActiveHome === true) {
+                        setOpenHome(!openHome);
+                        setActiveHome(!isActiveHome);
+                        setActiveDep(!isActiveDep);
+                      } else {
+                        setActiveDep(!isActiveDep);
+                      }
+                      setTimeout(() => {
+                        setOpenDeparture(!openDeparture);
+                      }, 100);
+                    }
+                  }}
+                >
                   <div className="d-block app-link-anim">
                     <img
                       alt="Departures App SVG"
@@ -56,7 +121,31 @@ function HomePage({ openHome }) {
                 </a>
               </Col>
               <Col lg="2" className="mb-2">
-                <a className="app-links-green app-links-hover" href="#">
+                <a
+                  className="app-links-green app-links-hover"
+                  onClick={() => {
+                    if (openWiki === false) {
+                      if (isActiveDep === true) {
+                        setOpenDeparture(!openDeparture);
+                        setActiveDep(!isActiveDep);
+                        setActiveWiki(!isActiveWiki);
+                      } else if (isActiveArr === true) {
+                        setOpenArrival(!openArrival);
+                        setActiveArr(!isActiveArr);
+                        setActiveWiki(!isActiveWiki);
+                      } else if (isActiveHome === true) {
+                        setOpenHome(!openHome);
+                        setActiveHome(!isActiveHome);
+                        setActiveWiki(!isActiveWiki);
+                      } else {
+                        setActiveWiki(!isActiveWiki);
+                      }
+                      setTimeout(() => {
+                        setOpenWiki(!openWiki);
+                      }, 100);
+                    }
+                  }}
+                >
                   <div className="d-block app-link-anim">
                     <img
                       alt="Wiki App SVG"

@@ -40,6 +40,7 @@ iframe {
 
 .app-link-anim:hover {
   animation: app-shadow-hover-in 0.3s ease-out forwards;
+  cursor: pointer;
 }
 
 .app-link-anim {
