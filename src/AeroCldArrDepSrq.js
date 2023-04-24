@@ -12,18 +12,14 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
           currentTag.removeAttribute("style", "animation-name");
         }, 300);
       });
-      document.querySelector("#iframe-dep").src =
-        document.querySelector("#iframe-dep").src;
-    }, 60000);
+      document.querySelector(".if-aerocloud").src =
+        document.querySelector(".if-aerocloud").src;
+    }, 10000);
   }, []);
 
   useEffect(() => {
     document.querySelectorAll(".date-text").forEach((currentTag) => {
       currentTag.innerHTML = new Date().toString();
-      currentTag.setAttribute("style", "animation-name: date-text-glow");
-      setTimeout(() => {
-        currentTag.removeAttribute("style", "animation-name");
-      }, 300);
     });
   });
 
@@ -38,9 +34,8 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
               className="date-text text-center text-success"
             ></p>
             <iframe
-              id="iframe-dep"
               title="aerocloud-srq-departures"
-              className="border border-2 rounded-3 border-success d-block"
+              className="if-aerocloud border border-2 rounded-3 border-success d-block"
               src="https://aerocloud-us-fids-widgets.s3.us-east-2.amazonaws.com/srq_dep.html"
             ></iframe>
           </div>
@@ -50,9 +45,8 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
             <h2 className="text-center text-success">SRQ Flight Arrivals</h2>
             <p className="date-text text-center text-success"></p>
             <iframe
-              id="iframe-arr"
               title="aerocloud-srq-arrivals"
-              className="border border-2 rounded-3 border-success d-block"
+              className="if-aerocloud border border-2 rounded-3 border-success d-block"
               src="https://aerocloud-us-fids-widgets.s3.us-east-2.amazonaws.com/srq_arr.html"
             ></iframe>
           </div>
