@@ -30,7 +30,7 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
   return (
     <>
       <Container>
-        <Fade in={openDeparture} unmountOnExit>
+        <Fade className="content-fill-page" in={openDeparture} unmountOnExit>
           <div id="departures-fade">
             <h2 className="text-center text-success">SRQ Flight Departures</h2>
             <p
@@ -45,7 +45,7 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
             ></iframe>
           </div>
         </Fade>
-        <Fade in={openArrival} unmountOnExit>
+        <Fade className="content-fill-page" in={openArrival} unmountOnExit>
           <div id="arrival-fade">
             <h2 className="text-center text-success">SRQ Flight Arrivals</h2>
             <p className="date-text text-center text-success"></p>

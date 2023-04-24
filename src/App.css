@@ -87,3 +87,7 @@ iframe {
 .app-links-hover:hover {
   color: #a0a0a0;
 }
+
+.content-fill-page {
+  min-height: calc(100vh - 268px);
+}

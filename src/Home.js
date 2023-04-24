@@ -34,11 +34,7 @@ function HomePage({
   return (
     <>
       <Container>
-        <Fade
-          style={{ minHeight: "calc(100vh - 268px)" }}
-          in={openHome}
-          unmountOnExit
-        >
+        <Fade className="content-fill-page" in={openHome} unmountOnExit>
           <div id="home-fade">
             <h2 className="text-center text-success mb-5">Navigation Links</h2>
             <Row

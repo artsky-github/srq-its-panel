@@ -5,7 +5,7 @@ function CommonUseWiki({ openWiki }) {
   return (
     <>
       <Container>
-        <Fade in={openWiki} unmountOnExit>
+        <Fade className="content-fill-page" in={openWiki} unmountOnExit>
           <div id="wiki-fade">
             <h2
               className="text-center text-success"
