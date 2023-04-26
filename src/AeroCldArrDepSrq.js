@@ -14,7 +14,7 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
       });
       document.querySelector(".if-aerocloud").src =
         document.querySelector(".if-aerocloud").src;
-    }, 10000);
+    }, 60000);
   }, []);
 
   useEffect(() => {
