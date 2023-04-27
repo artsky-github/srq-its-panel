@@ -6,16 +6,19 @@ import Stack from "react-bootstrap/Stack";
 import { useState } from "react";
 import AeroCloudArrDepSrq from "./AeroCldArrDepSrq";
 import CommonUseWiki from "./ComUseWiki";
+import MoreApps from "./moreApps";
 import HomePage from "./Home";
 
 function NavBar() {
   const [isActiveArr, setActiveArr] = useState(false);
   const [isActiveDep, setActiveDep] = useState(false);
   const [isActiveWiki, setActiveWiki] = useState(false);
+  const [isActiveApps, setActiveApps] = useState(false);
   const [isActiveHome, setActiveHome] = useState(true);
   const [openArrival, setOpenArrival] = useState(false);
   const [openDeparture, setOpenDeparture] = useState(false);
   const [openWiki, setOpenWiki] = useState(false);
+  const [openApps, setOpenApps] = useState(false);
   const [openHome, setOpenHome] = useState(true);
 
   return (
@@ -42,6 +45,10 @@ function NavBar() {
                       setOpenWiki(!openWiki);
                       setActiveWiki(!isActiveWiki);
                       setActiveHome(!isActiveHome);
+                    } else if (isActiveApps === true) {
+                      setOpenApps(!openApps);
+                      setActiveApps(!isActiveApps);
+                      setActiveHome(!isActiveHome);
                     } else if (isActiveArr === true) {
                       setOpenArrival(!openArrival);
                       setActiveArr(!isActiveArr);
@@ -52,7 +59,7 @@ function NavBar() {
 
                     setTimeout(() => {
                       setOpenHome(!openHome);
-                    }, 100);
+                    }, 200);
                   }
                 }}
                 aria-controls="home-fade"
@@ -71,6 +78,10 @@ function NavBar() {
                     } else if (isActiveWiki === true) {
                       setOpenWiki(!openWiki);
                       setActiveWiki(!isActiveWiki);
+                      setActiveArr(!isActiveArr);
+                    } else if (isActiveApps === true) {
+                      setOpenApps(!openApps);
+                      setActiveApps(!isActiveApps);
                       setActiveArr(!isActiveArr);
                     } else if (isActiveHome === true) {
                       setOpenHome(!openHome);
@@ -101,6 +112,10 @@ function NavBar() {
                       setOpenWiki(!openWiki);
                       setActiveWiki(!isActiveWiki);
                       setActiveDep(!isActiveDep);
+                    } else if (isActiveApps === true) {
+                      setOpenApps(!openApps);
+                      setActiveApps(!isActiveApps);
+                      setActiveDep(!isActiveDep);
                     } else if (isActiveHome === true) {
                       setOpenHome(!openHome);
                       setActiveHome(!isActiveHome);
@@ -130,6 +145,10 @@ function NavBar() {
                       setOpenArrival(!openArrival);
                       setActiveArr(!isActiveArr);
                       setActiveWiki(!isActiveWiki);
+                    } else if (isActiveApps === true) {
+                      setOpenApps(!openApps);
+                      setActiveApps(!isActiveApps);
+                      setActiveWiki(!isActiveWiki);
                     } else if (isActiveHome === true) {
                       setOpenHome(!openHome);
                       setActiveHome(!isActiveHome);
@@ -148,33 +167,73 @@ function NavBar() {
               >
                 Wiki
               </Nav.Link>
+              <Nav.Link
+                onClick={() => {
+                  if (openApps === false) {
+                    if (isActiveDep === true) {
+                      setOpenDeparture(!openDeparture);
+                      setActiveDep(!isActiveDep);
+                      setActiveApps(!isActiveApps);
+                    } else if (isActiveArr === true) {
+                      setOpenArrival(!openArrival);
+                      setActiveArr(!isActiveArr);
+                      setActiveApps(!isActiveApps);
+                    } else if (isActiveWiki === true) {
+                      setOpenWiki(!openWiki);
+                      setActiveWiki(!isActiveWiki);
+                      setActiveApps(!isActiveApps);
+                    } else if (isActiveHome === true) {
+                      setOpenHome(!openHome);
+                      setActiveHome(!isActiveHome);
+                      setActiveApps(!isActiveApps);
+                    } else {
+                      setActiveApps(!isActiveApps);
+                    }
+                    setTimeout(() => {
+                      setOpenApps(!openApps);
+                    }, 200);
+                  }
+                }}
+                aria-controls="apps-fade"
+                aria-expanded={openApps}
+                active={isActiveApps}
+              >
+                Apps
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <AeroCloudArrDepSrq
-        openDeparture={openDeparture}
-        openArrival={openArrival}
-      />
-      <CommonUseWiki openWiki={openWiki} />
-      <HomePage
-        isActiveArr={isActiveArr}
-        isActiveDep={isActiveDep}
-        isActiveWiki={isActiveWiki}
-        isActiveHome={isActiveHome}
-        openArrival={openArrival}
-        openDeparture={openDeparture}
-        openWiki={openWiki}
-        openHome={openHome}
-        setActiveArr={setActiveArr}
-        setActiveDep={setActiveDep}
-        setActiveWiki={setActiveWiki}
-        setActiveHome={setActiveHome}
-        setOpenArrival={setOpenArrival}
-        setOpenDeparture={setOpenDeparture}
-        setOpenWiki={setOpenWiki}
-        setOpenHome={setOpenHome}
-      />
+      <Container className="content-fill-page">
+        <AeroCloudArrDepSrq
+          openDeparture={openDeparture}
+          openArrival={openArrival}
+        />
+        <CommonUseWiki openWiki={openWiki} />
+        <MoreApps openApps={openApps} />
+        <HomePage
+          isActiveArr={isActiveArr}
+          isActiveDep={isActiveDep}
+          isActiveWiki={isActiveWiki}
+          isActiveApps={isActiveApps}
+          isActiveHome={isActiveHome}
+          openArrival={openArrival}
+          openDeparture={openDeparture}
+          openWiki={openWiki}
+          openApps={openApps}
+          openHome={openHome}
+          setActiveArr={setActiveArr}
+          setActiveDep={setActiveDep}
+          setActiveWiki={setActiveWiki}
+          setActiveApps={setActiveApps}
+          setActiveHome={setActiveHome}
+          setOpenArrival={setOpenArrival}
+          setOpenDeparture={setOpenDeparture}
+          setOpenWiki={setOpenWiki}
+          setOpenApps={setOpenApps}
+          setOpenHome={setOpenHome}
+        />
+      </Container>
     </>
   );
 }
