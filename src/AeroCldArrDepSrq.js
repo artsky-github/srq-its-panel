@@ -3,6 +3,8 @@ import Fade from "react-bootstrap/Fade";
 import { useEffect } from "react";
 
 function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
+  let aeroCloudFids = document.querySelector(".if-aerocloud");
+
   useEffect(() => {
     window.setInterval(() => {
       document.querySelectorAll(".date-text").forEach((currentTag) => {
@@ -12,8 +14,10 @@ function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
           currentTag.removeAttribute("style", "animation-name");
         }, 300);
       });
-      document.querySelector(".if-aerocloud").src =
-        document.querySelector(".if-aerocloud").src;
+      if (aeroCloudFids !== null) {
+        document.querySelector(".if-aerocloud").src =
+          document.querySelector(".if-aerocloud").src;
+      }
     }, 60000);
   }, []);
 

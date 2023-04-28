@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import Fade from "react-bootstrap/Fade";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,6 +5,8 @@ import arrivalApp from "./images/arrival_app.svg";
 import departureApp from "./images/departure_app.svg";
 import wikiApp from "./images/wiki_app.svg";
 import linksApp from "./images/links_app.svg";
+import { useEffect } from "react";
+import WeatherComponent from "./WeatherAPI";
 
 function HomePage({
   isActiveArr,
@@ -29,10 +30,25 @@ function HomePage({
   setOpenApps,
   setOpenHome,
 }) {
+  useEffect(() => {
+    let currentHour = new Date().getHours();
+    let timeGreeting = document.querySelector("#time-text");
+
+    if (timeGreeting !== null) {
+      if (currentHour >= 0 && currentHour <= 11) {
+        timeGreeting.innerHTML = "Good Morning!";
+      } else if (currentHour >= 12 && currentHour <= 17) {
+        timeGreeting.innerHTML = "Good Afternoon!";
+      } else if (currentHour >= 18 && currentHour <= 23) {
+        timeGreeting.innerHTML = "Good Evening!";
+      }
+    }
+  });
   return (
     <>
       <Fade in={openHome} unmountOnExit>
         <div id="home-fade">
+          <WeatherComponent></WeatherComponent>
           <h2 className="text-center text-success mb-5">Navigation Links</h2>
           <Row xs="2" md="4" className="mx-5 row-stackLeft-resize text-center">
             <Col lg="2" className="mb-2">

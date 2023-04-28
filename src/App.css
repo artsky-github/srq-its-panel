@@ -17,6 +17,10 @@ iframe {
   .row-stackLeft-resize {
     justify-content: left;
   }
+
+  .mobile-flex-wrap {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
@@ -90,4 +94,9 @@ iframe {
 
 .content-fill-page {
   min-height: calc(100vh - 268px);
+}
+
+#weatherIcon {
+  filter: drop-shadow(2px 2px 5px #a0a0a0);
+  width: 100px;
 }
