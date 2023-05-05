@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 function SpinnerImage() {
   return (
     <Spinner
-      style={{ marginInline: "25px", marginBlock: "10px" }}
+      style={{ marginInline: "25px", marginBlock: "25px" }}
       animation="grow"
       variant="success"
     ></Spinner>
@@ -27,7 +27,9 @@ function WeatherComponent() {
     const temperature = document.querySelector("#temperature");
     const cityInfo = document.querySelector("#cityInfo");
     const cityName = "4172139";
-    const weatherApiKey = "f662e82f8f842d7f96bbf306af33e4c2";
+    // Not the ideal way of handling API Keys, must be handled in back end.
+    const weatherApiKey = process.env.REACT_APP_API_KEY;
+    console.log(weatherApiKey);
     const apiCall = `https://api.openweathermap.org/data/2.5/weather?id=${cityName}&appid=${weatherApiKey}&units=imperial`;
     const iconURL = "https://openweathermap.org/img/wn/";
 
