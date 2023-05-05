@@ -28,7 +28,6 @@ function WeatherComponent() {
     const cityInfo = document.querySelector("#cityInfo");
     const cityName = "4172139";
     const weatherApiKey = process.env.REACT_APP_API_KEY;
-    console.log(weatherApiKey);
     const apiCall = `https://api.openweathermap.org/data/2.5/weather?id=${cityName}&appid=${weatherApiKey}&units=imperial`;
     const iconURL = "https://openweathermap.org/img/wn/";
 
