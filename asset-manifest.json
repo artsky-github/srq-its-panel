@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/srq-its-panel/static/css/main.7d288cf3.css",
-    "main.js": "/srq-its-panel/static/js/main.a86df697.js",
+    "main.js": "/srq-its-panel/static/js/main.563a5ad0.js",
     "static/js/787.65fda71f.chunk.js": "/srq-its-panel/static/js/787.65fda71f.chunk.js",
     "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.7abe0c549502eb73c25fde95a3f38bdc.svg",
     "static/media/adp_app.svg": "/srq-its-panel/static/media/adp_app.b3ac2fc019aad3d2006ac63670f8cf45.svg",
@@ -17,11 +17,11 @@
     "static/media/srq-logo.svg": "/srq-its-panel/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
     "index.html": "/srq-its-panel/index.html",
     "main.7d288cf3.css.map": "/srq-its-panel/static/css/main.7d288cf3.css.map",
-    "main.a86df697.js.map": "/srq-its-panel/static/js/main.a86df697.js.map",
+    "main.563a5ad0.js.map": "/srq-its-panel/static/js/main.563a5ad0.js.map",
     "787.65fda71f.chunk.js.map": "/srq-its-panel/static/js/787.65fda71f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d288cf3.css",
-    "static/js/main.a86df697.js"
+    "static/js/main.563a5ad0.js"
   ]
 }
