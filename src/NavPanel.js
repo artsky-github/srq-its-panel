@@ -25,7 +25,36 @@ function NavBar() {
     <>
       <Navbar className="mb-5" bg="success" expand="md" variant="dark">
         <Container>
-          <Navbar.Brand id="navbar-brand-srq">
+          <Navbar.Brand
+            id="navbar-brand-srq"
+            onClick={() => {
+              if (isActiveHome === false) {
+                if (isActiveDep === true) {
+                  setOpenDeparture(!openDeparture);
+                  setActiveDep(!isActiveDep);
+                  setActiveHome(!isActiveHome);
+                } else if (isActiveWiki === true) {
+                  setOpenWiki(!openWiki);
+                  setActiveWiki(!isActiveWiki);
+                  setActiveHome(!isActiveHome);
+                } else if (isActiveApps === true) {
+                  setOpenApps(!openApps);
+                  setActiveApps(!isActiveApps);
+                  setActiveHome(!isActiveHome);
+                } else if (isActiveArr === true) {
+                  setOpenArrival(!openArrival);
+                  setActiveArr(!isActiveArr);
+                  setActiveHome(!isActiveHome);
+                } else {
+                  setActiveHome(!isActiveHome);
+                }
+
+                setTimeout(() => {
+                  setOpenHome(!openHome);
+                }, 200);
+              }
+            }}
+          >
             <Stack direction="horizontal" gap={3}>
               <img alt="SVG of SRQ" src={logo} />
               <span className="fs-4 fw-bold">ITS Panel</span>
