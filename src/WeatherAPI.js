@@ -27,7 +27,6 @@ function WeatherComponent() {
     const temperature = document.querySelector("#temperature");
     const cityInfo = document.querySelector("#cityInfo");
     const cityName = "4172139";
-    // Not the ideal way of handling API Keys, must be handled in back end.
     const weatherApiKey = process.env.REACT_APP_API_KEY;
     console.log(weatherApiKey);
     const apiCall = `https://api.openweathermap.org/data/2.5/weather?id=${cityName}&appid=${weatherApiKey}&units=imperial`;
@@ -61,7 +60,7 @@ function WeatherComponent() {
         ReactDOM.unmountComponentAtNode(textLoadConts[0]);
         ReactDOM.unmountComponentAtNode(textLoadConts[1]);
       });
-  });
+  }, []);
   return (
     <>
       <div
