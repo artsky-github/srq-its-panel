@@ -3,17 +3,19 @@ import Fade from "react-bootstrap/Fade";
 import { useEffect } from "react";
 
 function AeroCloudArrDepSrq({ openArrival, openDeparture }) {
-  window.setInterval(() => {
-    document.querySelectorAll(".date-text").forEach((currentTag) => {
-      currentTag.innerHTML = new Date().toString();
-      currentTag.setAttribute("style", "animation-name: date-text-glow");
-      setTimeout(() => {
-        currentTag.removeAttribute("style", "animation-name");
-      }, 300);
-    });
-    document.querySelector(".if-aerocloud").src =
-      document.querySelector(".if-aerocloud").src;
-  }, 60000);
+  useEffect(() => {
+    window.setInterval(() => {
+      document.querySelectorAll(".date-text").forEach((currentTag) => {
+        currentTag.innerHTML = new Date().toString();
+        currentTag.setAttribute("style", "animation-name: date-text-glow");
+        setTimeout(() => {
+          currentTag.removeAttribute("style", "animation-name");
+        }, 300);
+      });
+      document.querySelector(".if-aerocloud").src =
+        document.querySelector(".if-aerocloud").src;
+    }, 10000);
+  }, []);
 
   useEffect(() => {
     document.querySelectorAll(".date-text").forEach((currentTag) => {
