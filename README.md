@@ -2,7 +2,7 @@
 <img src = "https://raw.githubusercontent.com/artsky-bot/srq-its-panel/main/srq-readme-logo.png" alt = "Logo" width = "500"/></p>
 
 <p align = "center">
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?logo=bootstrap&style=flat)](https://getbootstrap.com) [![React-Bootstrap](https://img.shields.io/badge/React--Bootstrap-2.7.2-61DAFB?logo=react&style=flat)](https://react-bootstrap.github.io)  [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=flat)](https://react.dev)  [![gh-pages](https://img.shields.io/badge/gh--pages-5.0.0-white?logo=github&style=flat)](https://www.npmjs.com/package/gh-pages)
+<img src = "https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?logo=bootstrap&style=flat" alt = "bootstrap-badge"/> <img src = "https://img.shields.io/badge/React--Bootstrap-2.7.2-61DAFB?logo=react&style=flat" alt = "react-bootstrap-badge"/> <img src = "https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=flat" alt = "react"/> <img src = "https://img.shields.io/badge/gh--pages-5.0.0-white?logo=github&style=flat"/>
 </p>
 
 # SRQ ITS Panel
@@ -20,7 +20,7 @@ This project is used by the following department:
 <p align="center"> 
 <img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true"/>
 
-<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "180"/>
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "250"/>
 </p>
 
 ## Features
