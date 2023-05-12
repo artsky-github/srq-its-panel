@@ -18,9 +18,9 @@ This project is used by the following department:
 ## Demos
 
 <p align="center"> 
-<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true"/>
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true" width = "500"/>
 
-<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "250"/>
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "200"/>
 </p>
 
 ## Features
