@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<p align = "center">
+<img src = "https://raw.githubusercontent.com/artsky-bot/srq-its-panel/main/srq-readme-logo.png" alt = "Logo" width = "500"/></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align = "center">
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?logo=bootstrap&style=flat)](https://getbootstrap.com) [![React-Bootstrap](https://img.shields.io/badge/React--Bootstrap-2.7.2-61DAFB?logo=react&style=flat)](https://react-bootstrap.github.io)  [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=flat)](https://react.dev)  [![gh-pages](https://img.shields.io/badge/gh--pages-5.0.0-white?logo=github&style=flat)](https://www.npmjs.com/package/gh-pages)
+</p>
 
-## Available Scripts
+# SRQ ITS Panel
 
-In the project directory, you can run:
+A dashboard created for the IT department of the Sarasota Bradenton International Airport. The purpose of the web application was to create an alternative to SharePoint which aims to be more organized and efficient. IT employees will be able to reference important tools and information specific to them.
 
-### `npm start`
+## Used By
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is used by the following department:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ITS of SRQ (Sarasota Bradenton International Airport)
 
-### `npm test`
+## Demos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center"> 
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true"/>
 
-### `npm run build`
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "180"/>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Responsive Web Application
+- Single Page Application
+- Multi-navigational
+- OpenWeather API
+- AeroCloud API (re-render after one minute)
+- Word Online API (requries credentials to view Wiki)
+- Smooth Animations using Bootstrap and CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Lessons Learned
 
-### `npm run eject`
+This was my first React project. I learned how to utilize react hooks such as useState and useEffect, componentize all the web features, and use Bootstrap JSX with Bootstrap selectors as well as custom CSS, HTML, and JS. I also learned how to integrate APIs, mount an dismount blocks of HTML for SPA purposes, and integrate my react application with Github Pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Road Map
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Refactor markup and code in components.
+- Implement an Outlook API that sends a notification message and sound to when an email is sent to ITS.
