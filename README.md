@@ -18,7 +18,7 @@ This project is used by the following department:
 ## Demos
 
 <p align="center"> 
-<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true" width = "500"/>
+<img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-readme-demo.gif?raw=true" width = "600"/>
 
 <img src = "https://github.com/artsky-bot/srq-its-panel/blob/main/srq-mobile-readme-demo.gif?raw=true" alt = "mobile demo" width = "200"/>
 </p>
@@ -33,11 +33,11 @@ This project is used by the following department:
 - Word Online API (requries credentials to view Wiki)
 - Smooth Animations using Bootstrap and CSS.
 
-## Lessons Learned
-
-This was my first React project. I learned how to utilize react hooks such as useState and useEffect, componentize all the web features, and use Bootstrap JSX with Bootstrap selectors as well as custom CSS, HTML, and JS. I also learned how to integrate APIs, mount an dismount blocks of HTML for SPA purposes, and integrate my react application with Github Pages.
-
 ## Road Map
 
 - Refactor markup and code in components.
 - Implement an Outlook API that sends a notification message and sound to when an email is sent to ITS.
+
+## Feedback
+
+If you have any feedback, please reach out to artsky.task@gmail.com
