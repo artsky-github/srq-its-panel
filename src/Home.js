@@ -51,9 +51,9 @@ function HomePage({
           <WeatherComponent></WeatherComponent>
           <h2 className="text-center text-success mb-5">Navigation Links</h2>
           <Row xs="2" md="4" className="mx-5 row-stackLeft-resize text-center">
-            <Col lg="2" className="mb-2">
+            <Col lg="2" className="mb-2 d-flex justify-content-center">
               <a
-                className="app-links-green app-links-hover"
+                className="d-block app-links-green app-links-hover"
                 onClick={() => {
                   if (isActiveArr === false) {
                     if (isActiveDep === true) {
@@ -92,9 +92,9 @@ function HomePage({
                 Arrivals
               </a>
             </Col>
-            <Col lg="2" className="mb-2">
+            <Col lg="2" className="mb-2 d-flex justify-content-center">
               <a
-                className="app-links-green app-links-hover"
+                className="d-block app-links-green app-links-hover"
                 onClick={() => {
                   if (openDeparture === false) {
                     if (isActiveArr === true) {
@@ -133,9 +133,9 @@ function HomePage({
                 Departures
               </a>
             </Col>
-            <Col lg="2" className="mb-2">
+            <Col lg="2" className="mb-2 d-flex justify-content-center">
               <a
-                className="app-links-green app-links-hover"
+                className="d-block app-links-green app-links-hover"
                 onClick={() => {
                   if (openWiki === false) {
                     if (isActiveDep === true) {
@@ -174,9 +174,9 @@ function HomePage({
                 Wiki
               </a>
             </Col>
-            <Col lg="2" className="mb-2">
+            <Col lg="2" className="mb-2 d-flex justify-content-center">
               <a
-                className="app-links-green app-links-hover"
+                className="d-block app-links-green app-links-hover"
                 onClick={() => {
                   if (openApps === false) {
                     if (isActiveDep === true) {

@@ -74,16 +74,19 @@ iframe {
 }
 
 .app-links-green {
+  width: 100px;
   color: #198754;
   text-decoration: none;
 }
 
 .app-links-blue {
+  width: 100px;
   color: #2858a6;
   text-decoration: none;
 }
 
 .app-links-red {
+  width: 100px;
   color: #a62828;
   text-decoration: none;
 }
