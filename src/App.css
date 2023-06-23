@@ -79,15 +79,21 @@ iframe {
   text-decoration: none;
 }
 
-.app-links-blue {
+.app-links-msapps {
   width: 100px;
-  color: #2858a6;
+  color: #555866;
   text-decoration: none;
 }
 
-.app-links-red {
+.app-links-itsapps {
   width: 100px;
-  color: #a62828;
+  color: #6b8a74;
+  text-decoration: none;
+}
+
+.app-links-addapps {
+  width: 100px;
+  color: #aa8c70;
   text-decoration: none;
 }
 
