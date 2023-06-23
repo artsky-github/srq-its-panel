@@ -16,7 +16,7 @@ function MoreApps({ openApps }) {
     <>
       <Fade className="content-fill-page" in={openApps} unmountOnExit>
         <div id="apps-fade">
-          <h2 className="text-center my-5" style={{ color: "#6B8A74" }}>
+          <h2 className="text-center my-5" style={{ color: "#659C83" }}>
             ITS Apps
           </h2>
           <Row xs="2" md="4" className="mx-5 row-stackLeft-resize text-center">
@@ -57,7 +57,7 @@ function MoreApps({ openApps }) {
               </a>
             </Col>
           </Row>
-          <h2 className="text-center my-5" style={{ color: "#555866" }}>
+          <h2 className="text-center my-5" style={{ color: "#275E44" }}>
             Microsoft Apps
           </h2>
           <Row xs="2" md="4" className="mx-5 row-stackLeft-resize text-center">
@@ -134,7 +134,7 @@ function MoreApps({ openApps }) {
               </a>
             </Col>
           </Row>
-          <h2 className="text-center my-5" style={{ color: "#AA8C70" }}>
+          <h2 className="text-center my-5" style={{ color: "#447B62" }}>
             Additional Apps
           </h2>
           <Row xs="2" md="4" className="mx-5 row-stackLeft-resize text-center">
