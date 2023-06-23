@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/srq-its-panel/static/css/main.44fac086.css",
-    "main.js": "/srq-its-panel/static/js/main.bb8e98e1.js",
+    "main.css": "/srq-its-panel/static/css/main.2d7ba195.css",
+    "main.js": "/srq-its-panel/static/js/main.b1eef23a.js",
     "static/js/787.65fda71f.chunk.js": "/srq-its-panel/static/js/787.65fda71f.chunk.js",
-    "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.5a3edf7cd3060a8f19afbe0d36e4878c.svg",
-    "static/media/ac_support_app.svg": "/srq-its-panel/static/media/ac_support_app.2160692ce1172615617cb6426c0bf555.svg",
-    "static/media/nass_app.svg": "/srq-its-panel/static/media/nass_app.9a93f4007f0266c5fc8b4748c9e89cd2.svg",
-    "static/media/adp_app.svg": "/srq-its-panel/static/media/adp_app.ec81929627ec7937d670916579942085.svg",
-    "static/media/sharepoint_app.svg": "/srq-its-panel/static/media/sharepoint_app.2241408d6556be151cace7991f67f865.svg",
-    "static/media/sdp_app.svg": "/srq-its-panel/static/media/sdp_app.ddef68b3bd12f9110eae3b4e0cdb920e.svg",
+    "static/media/radar_app.svg": "/srq-its-panel/static/media/radar_app.2e89f9c85dd78adbd4d7fbc40f37b8f0.svg",
+    "static/media/ac_support_app.svg": "/srq-its-panel/static/media/ac_support_app.c5bc13c34ff17bcc8deaedd151f1da36.svg",
+    "static/media/nass_app.svg": "/srq-its-panel/static/media/nass_app.e7e6bb8e2a00a3952c9848a155fcbec3.svg",
+    "static/media/adp_app.svg": "/srq-its-panel/static/media/adp_app.d7479e1aadbc676e74968dbc4c732462.svg",
+    "static/media/sharepoint_app.svg": "/srq-its-panel/static/media/sharepoint_app.b054f1b0b58b50761e941624e5e8ec2a.svg",
+    "static/media/sdp_app.svg": "/srq-its-panel/static/media/sdp_app.ff15695fc26b8e63af9349989004be6d.svg",
     "static/media/arrival_app.svg": "/srq-its-panel/static/media/arrival_app.747edb75ce6ec560885584e3069e04f5.svg",
-    "static/media/outlook_app.svg": "/srq-its-panel/static/media/outlook_app.6b77432e79e2ab18616e5c7e606eb22f.svg",
+    "static/media/outlook_app.svg": "/srq-its-panel/static/media/outlook_app.dd7a521a8b2c466ee6e60dfcb394945c.svg",
     "static/media/wiki_app.svg": "/srq-its-panel/static/media/wiki_app.0c469a9852bc1c23362d36f668c8a4c4.svg",
     "static/media/departure_app.svg": "/srq-its-panel/static/media/departure_app.bd94f2179d5015c4ba08f9328ced5441.svg",
-    "static/media/teams_app.svg": "/srq-its-panel/static/media/teams_app.1f869395df785c9335a21619042e9a78.svg",
+    "static/media/teams_app.svg": "/srq-its-panel/static/media/teams_app.abdef4ea693d9c4f6a2e9aceb45c7beb.svg",
     "static/media/links_app.svg": "/srq-its-panel/static/media/links_app.dff862347fdf8d287316137f184dbe91.svg",
-    "static/media/excel_app.svg": "/srq-its-panel/static/media/excel_app.dc69b28fc68c90f86506ef58ca9a15cd.svg",
+    "static/media/excel_app.svg": "/srq-its-panel/static/media/excel_app.0d82a703ce330fe2ca9706c824012845.svg",
     "static/media/srq-logo.svg": "/srq-its-panel/static/media/srq-logo.31c318b8445ee52fa051e41f02555fbd.svg",
     "index.html": "/srq-its-panel/index.html",
-    "main.44fac086.css.map": "/srq-its-panel/static/css/main.44fac086.css.map",
-    "main.bb8e98e1.js.map": "/srq-its-panel/static/js/main.bb8e98e1.js.map",
+    "main.2d7ba195.css.map": "/srq-its-panel/static/css/main.2d7ba195.css.map",
+    "main.b1eef23a.js.map": "/srq-its-panel/static/js/main.b1eef23a.js.map",
     "787.65fda71f.chunk.js.map": "/srq-its-panel/static/js/787.65fda71f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44fac086.css",
-    "static/js/main.bb8e98e1.js"
+    "static/css/main.2d7ba195.css",
+    "static/js/main.b1eef23a.js"
   ]
 }
