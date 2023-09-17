@@ -1,6 +1,5 @@
 <p align = "center">
-<img src = "https://raw.githubusercontent.com/artsky-bot/srq-its-panel/main/srq-readme-logo.png" alt = "Logo" width = "500"/></p>
-
+<img src = "https://raw.githubusercontent.com/artsky-github/srq-its-panel/main/srq-readme-logo.png?token=GHSAT0AAAAAACGYKU2QOL6FY33ZU6DECWXWZIHQ5LQ" alt = "Logo" width = "500"/></p>
 <p align = "center">
 <img src = "https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?logo=bootstrap&style=flat" alt = "bootstrap-badge"/> <img src = "https://img.shields.io/badge/React--Bootstrap-2.7.2-61DAFB?logo=react&style=flat" alt = "react-bootstrap-badge"/> <img src = "https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&style=flat" alt = "react"/> <img src = "https://img.shields.io/badge/gh--pages-5.0.0-white?logo=github&style=flat"/>
 </p>
